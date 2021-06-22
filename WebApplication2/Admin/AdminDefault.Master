@@ -1,0 +1,144 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminDefault.Master.cs" Inherits="WebApplication2.Admin.AdminDetaySayfalar" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+      <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Kontrol Paneli</title>
+	<!-- BOOTSTRAP STYLES-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+     <!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+        <!-- CUSTOM STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+       <script src="https://kit.fontawesome.com/45ed2421c5.js" crossorigin="anonymous"></script>
+     <!-- GOOGLE FONTS-->
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+            
+      <style type="text/css">
+          .auto-style1 {
+              display: inline;
+              font-size: 75%;
+              font-weight: bold;
+              line-height: 1;
+              color: #fff;
+              text-align: center;
+              white-space: nowrap;
+              vertical-align: baseline;
+              border-radius: .25em;
+              width: 177px;
+              height: 69px;
+              border: 1px solid #000;
+             
+              padding-left: .6em;
+              padding-right: .6em;
+              padding-top: .2em;
+              padding-bottom: .3em;
+              margin-top: -10px;
+          }
+          .auto-style2 {
+              left: 0px;
+              top: 0px;
+              height: auto;
+          }
+          .auto-style3 {
+              height: auto;
+             
+          }
+      </style>
+</head>
+<body>
+     
+           
+          
+    <div id="wrapper">
+         <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="adjust-nav">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../HomePage.aspx">
+                        <img src="assets/img/yemektarifi.jpg" class="auto-style1" />
+
+                    </a>
+                    
+                </div>
+              
+                <span class="logout-spn" >
+                  <a href="../HomePage.aspx" style="color:#fff;">LOGOUT</a>  
+
+                </span>
+            </div>
+        </div>
+        </div>
+       <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                 
+
+
+                   
+
+                    <li>
+                        <a href="AdminCategory.aspx"><i class="fa fa-table "></i>Kategoriler</a>
+                    </li>
+                    <li >
+                        <a href="AdminMessage.aspx"><i class="fa fa-envelope-o"></i>Gelen Mesajlar</a>
+                    </li>
+
+
+
+                 <li>
+                        <a href="AdminFood.aspx"><i class="fas fa-utensils "></i>Yemekler</a>
+                    </li>
+                    <li>
+                        <a href="AdminSuggestRecipe.aspx"><i class="fa fa-users "></i>Tarif Önerileri</a>
+                    </li>
+
+                    <li>
+                        <a href="AdminComment.aspx"><i class="fa fa-comments-o "></i>Yorumlar</a>
+                    </li>
+                     <li>
+                        <a href="AdminAboutUs.aspx"><i class="far fa-address-card "></i>Hakkımızda </a>
+                    </li>
+                </ul>
+                            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper" >
+            <div id="page-inner" class="auto-style3">
+                <div class="row my-5">
+                   
+                    <div class="auto-style2">
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                     <h2></h2>   
+                    </div>
+                </div>              
+                 <!-- /. ROW  -->
+              
+              
+                 <!-- /. ROW  -->           
+    </div>
+             <!-- /. PAGE INNER  -->
+            </div>
+         <!-- /. PAGE WRAPPER  -->
+      
+
+       <!-- /. WRAPPER  -->
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+      <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+      <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+    
+   
+</body>
+</html>
